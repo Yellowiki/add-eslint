@@ -1,9 +1,0 @@
-extends:
-  - airbnb
-  - xo
-  - prettier
-plugins:
-  - prettier
-rules:
-  prettier/prettier: error
-  no-console: off
