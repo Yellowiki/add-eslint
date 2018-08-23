@@ -15,8 +15,5 @@
     "eslint-plugin-react": "^7.4.0",
     "fs-extra": "^6.0.1",
     "prettier": "^1.10.2"
-  },
-  "scripts": {
-    "postinstall": "node postinstall"
   }
 }
