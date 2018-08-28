@@ -18,6 +18,8 @@ module.exports = {
     'react/no-multi-comp': 'off',
     'react/jsx-filename-extension': 'off',
     'react/prop-types': 'off',
+    'no-constant-condition': 'off',
+    'no-await-in-loop': 'off',
   },
   parser: 'babel-eslint',
   globals: {
