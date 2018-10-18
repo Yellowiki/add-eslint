@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'xo', 'prettier'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'typescript'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -20,8 +20,39 @@ module.exports = {
     'react/prop-types': 'off',
     'no-constant-condition': 'off',
     'no-await-in-loop': 'off',
+    'global-require': 'off',
+    'typescript/adjacent-overload-signatures': 'error',
+    'typescript/class-name-casing': 'error',
+    'typescript/explicit-member-accessibility': 'error',
+    'typescript/member-delimiter-style': ['error', { delimiter: 'none' }],
+    'typescript/member-naming': [
+      'error',
+      {
+        private: '^_',
+      },
+    ],
+    'typescript/member-ordering': 'error',
+    'typescript/no-angle-bracket-type-assertion': 'error',
+    'typescript/no-array-constructor': 'error',
+    'typescript/no-empty-interface': 'error',
+    'typescript/no-explicit-any': 'error',
+    'typescript/no-inferrable-types': 'error',
+    'typescript/no-namespace': 'error',
+    'typescript/no-non-null-assertion': 'error',
+    'typescript/no-triple-slash-reference': 'error',
+    'typescript/no-type-alias': [
+      'error',
+      {
+        allowAliases: true,
+      },
+    ],
+    'typescript/no-unused-vars': 'error',
+    'typescript/no-use-before-define': 'error',
+    'typescript/no-var-requires': 'error',
+    'typescript/prefer-namespace-keyword': 'error',
+    'typescript/type-annotation-spacing': 'error',
   },
-  parser: 'babel-eslint',
+  parser: 'typescript-eslint-parser',
   globals: {
     React: true,
   },
