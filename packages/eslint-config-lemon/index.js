@@ -80,4 +80,9 @@ module.exports = {
   globals: {
     React: true,
   },
+  env: {
+    node: true,
+    browser: true,
+    jest: true,
+  },
 }
