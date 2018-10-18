@@ -22,7 +22,6 @@ module.exports = {
     'no-constant-condition': 'off',
     'no-await-in-loop': 'off',
     'global-require': 'off',
-    'typescript/adjacent-overload-signatures': 'error',
     'typescript/class-name-casing': 'error',
     'typescript/explicit-member-accessibility': 'error',
     'typescript/member-delimiter-style': ['error', { delimiter: 'none' }],
@@ -48,11 +47,18 @@ module.exports = {
       },
     ],
     'typescript/no-unused-vars': 'error',
-    'typescript/no-use-before-define': 'error',
     'typescript/no-var-requires': 'error',
     'typescript/prefer-namespace-keyword': 'error',
     'typescript/type-annotation-spacing': 'error',
     'no-param-reassign': 'off',
+    'no-useless-constructor': 'error',
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'no-use-before-define': 'off',
+    'typescript/no-use-before-define': 'off',
+    'no-undef': 'off',
+    'typescript/adjacent-overload-signatures': 'off',
+    'no-underscore-dangle': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -86,5 +92,15 @@ module.exports = {
     node: true,
     browser: true,
     jest: true,
+  },
+  settings: {
+    'import/parsers': {
+      'typescript-eslint-parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 }
