@@ -52,6 +52,7 @@ module.exports = {
     'typescript/no-var-requires': 'error',
     'typescript/prefer-namespace-keyword': 'error',
     'typescript/type-annotation-spacing': 'error',
+    'no-param-reassign': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {
