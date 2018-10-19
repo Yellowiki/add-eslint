@@ -2,6 +2,7 @@
 
 const { argv } = require('yargs')
   .strict()
+  .option('ts', { desc: 'TypeScript linting' })
   .boolean('ts')
 
 const execa = require('execa')
