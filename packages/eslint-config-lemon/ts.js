@@ -4,7 +4,7 @@ const config = require('.')
 
 module.exports = deepAssign(config, {
   rules: {
-    'no-unused-vars': 'error',
+    'no-unused-vars': 'off',
     'typescript/no-var-requires': 'error',
   },
 })
