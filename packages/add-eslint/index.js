@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+const { argv } = require('yargs')
+  .strict()
+  .boolean('ts')
+
 const execa = require('execa')
 const Listr = require('listr')
 const split = require('split')
@@ -26,7 +30,7 @@ const tasks = new Listr([
       await fs.writeJSON(
         '.eslintrc',
         {
-          extends: 'lemon',
+          extends: argv.ts ? 'lemon/ts' : 'lemon',
         },
         { spaces: 2 },
       )
