@@ -6,5 +6,6 @@ module.exports = deepAssign(config, {
   rules: {
     'no-unused-vars': 'off',
     'typescript/no-var-requires': 'error',
+    'no-useless-constructor': 'off',
   },
 })
