@@ -8,5 +8,3 @@ module.exports = deepAssign(config, {
     'typescript/no-var-requires': 'error',
   },
 })
-
-console.log(module.exports)
