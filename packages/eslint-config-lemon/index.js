@@ -82,6 +82,12 @@ module.exports = {
         optionalDependencies: false,
       },
     ],
+    'no-empty-function': [
+      'error',
+      {
+        allow: ['constructors', 'arrowFunctions'],
+      },
+    ],
   },
   parser: 'typescript-eslint-parser',
   globals: {
