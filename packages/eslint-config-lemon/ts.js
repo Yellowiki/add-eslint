@@ -35,7 +35,6 @@ module.exports = deepAssign(config, {
     'typescript/prefer-namespace-keyword': 'error',
     'typescript/type-annotation-spacing': 'error',
     'no-param-reassign': 'off',
-    'no-useless-constructor': 'error',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
     'no-use-before-define': 'off',
