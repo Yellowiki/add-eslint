@@ -72,6 +72,8 @@ module.exports = {
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
+    'react/jsx-one-expression-per-line': 'off',
+    'react/destructuring-assignment': 'off',
   },
   parser: 'typescript-eslint-parser',
   globals: {
