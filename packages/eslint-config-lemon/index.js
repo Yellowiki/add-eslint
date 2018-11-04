@@ -75,7 +75,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react/destructuring-assignment': 'off',
   },
-  parser: 'typescript-eslint-parser',
+  parser: 'babel-eslint',
   globals: {
     React: true,
   },

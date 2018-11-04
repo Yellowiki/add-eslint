@@ -42,4 +42,5 @@ module.exports = deepAssign({}, config, {
     'no-undef': 'off',
     'typescript/adjacent-overload-signatures': 'off',
   },
+  parser: 'typescript-eslint-parser',
 })
