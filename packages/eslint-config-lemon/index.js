@@ -8,7 +8,6 @@ module.exports = {
         semi: false,
         trailingComma: 'all',
         singleQuote: true,
-        parser: 'typescript',
       },
     ],
     'react/jsx-uses-vars': 'error',
