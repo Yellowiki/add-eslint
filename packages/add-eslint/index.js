@@ -8,16 +8,14 @@ const { argv } = require('yargs')
 const execa = require('execa')
 const Listr = require('listr')
 const split = require('split')
-const { Observable } = require('rxjs')
 const streamToObservable = require('stream-to-observable')
 const fs = require('fs-extra')
 
 const exec = (cmd, args) => {
   const cp = execa(cmd, args)
-  return Observable.merge(
-    streamToObservable(cp.stdout.pipe(split()), { await: cp }),
-    streamToObservable(cp.stderr.pipe(split()), { await: cp }),
-  ).filter(Boolean)
+  return streamToObservable(cp.stdout.pipe(split()), { await: cp }).filter(
+    Boolean,
+  )
 }
 
 const tasks = new Listr([
