@@ -75,6 +75,7 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'no-inner-declarations': 'off',
     'no-cond-assign': ['error', 'except-parens'],
+    curly: ['error', 'multi-or-nest'],
   },
   parser: 'babel-eslint',
   globals: {
