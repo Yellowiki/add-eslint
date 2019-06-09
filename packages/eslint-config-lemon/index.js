@@ -81,9 +81,6 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
   },
   parser: 'babel-eslint',
-  globals: {
-    React: true,
-  },
   env: {
     node: true,
     browser: true,
