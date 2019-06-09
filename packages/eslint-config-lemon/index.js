@@ -76,6 +76,9 @@ module.exports = {
     'no-inner-declarations': 'off',
     'no-cond-assign': ['error', 'except-parens'],
     curly: ['error', 'all'],
+    'react/jsx-indent': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
   },
   parser: 'babel-eslint',
   globals: {
