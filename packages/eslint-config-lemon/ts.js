@@ -24,6 +24,7 @@ module.exports = mergeOptions({}, config, {
       },
     ],
     '@typescript-eslint/no-parameter-properties': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
