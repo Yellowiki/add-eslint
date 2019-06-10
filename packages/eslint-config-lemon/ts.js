@@ -32,6 +32,5 @@ module.exports = mergeOptions({}, config, {
     useJSXTextNode: true,
     project: './tsconfig.json',
     tsconfigRootDir: './',
-    extraFileExtensions: ['.vue'],
   },
 })
