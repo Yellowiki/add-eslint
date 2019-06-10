@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'prettier'],
-  plugins: ['prettier', 'typescript'],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -79,6 +79,7 @@ module.exports = {
     'react/jsx-indent': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'no-param-reassign': 'off',
   },
   parser: 'babel-eslint',
   env: {

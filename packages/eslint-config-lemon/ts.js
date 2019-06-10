@@ -1,46 +1,19 @@
-const deepAssign = require('deep-assign')
+const mergeOptions = require('merge-options')
 
 const config = require('.')
 
-module.exports = deepAssign({}, config, {
+module.exports = mergeOptions({}, config, {
+  extends: [
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+  ],
+  plugins: ['prettier', '@typescript-eslint'],
   rules: {
-    'no-unused-vars': 'off',
-    'typescript/no-var-requires': 'error',
     'no-useless-constructor': 'off',
-    'typescript/class-name-casing': 'error',
-    'typescript/explicit-member-accessibility': 'error',
-    'typescript/member-delimiter-style': ['error', { delimiter: 'none' }],
-    'typescript/member-naming': [
-      'error',
-      {
-        private: '^_',
-      },
-    ],
-    'typescript/member-ordering': 'error',
-    'typescript/no-angle-bracket-type-assertion': 'error',
-    'typescript/no-array-constructor': 'error',
-    'typescript/no-empty-interface': 'error',
-    'typescript/no-explicit-any': 'error',
-    'typescript/no-inferrable-types': 'error',
-    'typescript/no-namespace': 'error',
-    'typescript/no-non-null-assertion': 'error',
-    'typescript/no-triple-slash-reference': 'error',
-    'typescript/no-type-alias': [
-      'error',
-      {
-        allowAliases: true,
-      },
-    ],
-    'typescript/no-unused-vars': 'error',
-    'typescript/prefer-namespace-keyword': 'error',
-    'typescript/type-annotation-spacing': 'error',
-    'no-param-reassign': 'off',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
-    'no-use-before-define': 'off',
-    'typescript/no-use-before-define': 'off',
-    'no-undef': 'off',
-    'typescript/adjacent-overload-signatures': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -51,5 +24,14 @@ module.exports = deepAssign({}, config, {
       },
     ],
   },
-  parser: 'typescript-eslint-parser',
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    useJSXTextNode: true,
+    project: './tsconfig.json',
+    tsconfigRootDir: './',
+    extraFileExtensions: ['.vue'],
+  },
 })
