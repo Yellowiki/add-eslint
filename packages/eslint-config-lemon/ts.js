@@ -23,7 +23,7 @@ module.exports = mergeOptions({}, config, {
         parser: 'typescript',
       },
     ],
-    'no-parameter-properties': 'off',
+    '@typescript-eslint/no-parameter-properties': 'off',
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
