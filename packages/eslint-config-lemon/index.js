@@ -80,6 +80,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'import/no-cycle': 'off',
     'react/self-closing-comp': 'error',
+    'jsx-a11y/media-has-caption': 'off',
   },
   parser: 'babel-eslint',
   env: {
