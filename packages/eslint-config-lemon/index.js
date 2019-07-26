@@ -81,6 +81,7 @@ module.exports = {
     'import/no-cycle': 'off',
     'react/self-closing-comp': 'error',
     'jsx-a11y/media-has-caption': 'off',
+    'react/display-name': 'off',
   },
   parser: 'babel-eslint',
   env: {
