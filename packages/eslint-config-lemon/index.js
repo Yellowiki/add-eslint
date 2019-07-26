@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:react/recommended'],
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
@@ -15,8 +15,6 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/label-has-for': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/no-multi-comp': 'off',
-    'react/jsx-filename-extension': 'off',
     'react/prop-types': 'off',
     'no-constant-condition': 'off',
     'no-await-in-loop': 'off',
@@ -81,6 +79,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'no-param-reassign': 'off',
     'import/no-cycle': 'off',
+    'react/self-closing-comp': 'error',
   },
   parser: 'babel-eslint',
   env: {
