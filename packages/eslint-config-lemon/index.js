@@ -1,6 +1,13 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:react/recommended'],
-  plugins: ['prettier'],
+  extends: [
+    'airbnb',
+    'xo',
+    'xo-react',
+    'prettier',
+    'prettier/react',
+    'plugin:react/recommended',
+  ],
+  plugins: ['prettier', 'prefer-arrow'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -82,6 +89,15 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'jsx-a11y/media-has-caption': 'off',
     'react/display-name': 'off',
+    'arrow-body-style': ['error', 'as-needed'],
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      {
+        disallowPrototype: true,
+        singleReturnOnly: true,
+        classPropertiesAllowed: false,
+      },
+    ],
   },
   parser: 'babel-eslint',
   env: {
