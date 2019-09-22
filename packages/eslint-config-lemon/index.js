@@ -98,6 +98,7 @@ module.exports = {
         classPropertiesAllowed: false,
       },
     ],
+    'jsx-props-no-spreading': ['off'],
   },
   parser: 'babel-eslint',
   env: {
